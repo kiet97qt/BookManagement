@@ -20,6 +20,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  'GET /book': 'LivreController.getBook',
+  'POST /book': 'LivreController.createBook',
 
 
   /***************************************************************************
