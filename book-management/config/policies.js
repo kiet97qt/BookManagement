@@ -9,7 +9,9 @@
  */
 
 module.exports.policies = {
-
+  LivreController: {
+    createBook: 'isBook'
+  }
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions, unless overridden.       *
