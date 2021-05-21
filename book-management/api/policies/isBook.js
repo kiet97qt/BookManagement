@@ -1,4 +1,6 @@
 const Joi = require('joi');
+const UtilResponseService = require("../services/UtilResponseService");
+
 const schema = Joi.object({
     title: Joi.string()
         .min(0)
@@ -30,6 +32,6 @@ module.exports = async function modelValidation(req, res, next) {
     }
   }
   catch (err) { 
-    res.json(err)
-  }
+    return UtilResponseService.buildServiceResponse(null,err,null)
+    }
   };

@@ -11,10 +11,12 @@
     "grunt": "1.0.4",
     "joi": "^17.4.0",
     "nodemailer": "^6.6.0",
+    "redoc": "^2.0.0-rc.53",
     "sails": "^1.4.3",
     "sails-hook-grunt": "^4.0.0",
     "sails-hook-orm": "^3.0.2",
-    "sails-hook-sockets": "^2.0.0"
+    "sails-hook-sockets": "^2.0.0",
+    "sails-hook-swagger-generator": "^3.3.0"
   },
   "devDependencies": {
     "eslint": "5.16.0",
