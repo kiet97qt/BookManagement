@@ -90,4 +90,26 @@ module.exports = {
                 return HttpResponseService.internalServerError(res,constants.DATABASE_ERROR,bookServiceResponse.data)
         }
     },
+    swagger: {
+        components: {
+          "schemas": {
+            "Books": {
+              properties: {
+                title:{
+                  type: 'string'
+                },
+                numberOfPages:{
+                  type:'string'
+                },
+                author:{
+                    type:'string'
+                },
+                isAvailable:{
+                    type:'bool'
+                }
+              },
+            }
+          }
+        }
+      }
   };

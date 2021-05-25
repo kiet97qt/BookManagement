@@ -4,7 +4,7 @@ module.exports.models = {
         type: 'string'
       },
       numberOfPages:{
-        type:'string'
+        type:'number'
       },
       author:{
           type:'string'
@@ -13,4 +13,26 @@ module.exports.models = {
           type:'bool'
       }
     },
+    swagger: {
+      components: {
+        "schemas": {
+          "Books": {
+            properties: {
+              title:{
+                type: 'string'
+              },
+              numberOfPages:{
+                type:'integer'
+              },
+              author:{
+                  type:'string'
+              },
+              isAvailable:{
+                  type:'bool'
+              }
+            },
+          }
+        }
+      }
+    }
 };
